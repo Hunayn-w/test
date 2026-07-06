@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Task Tracker - Tasks</title>
+    <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="icon">📚</span> Study Task Tracker
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tasks.html" class="active">Tasks</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <p class="date">Monday 6th of July</p>
+        
+        <div class="split-layout">
+            <div class="form-section">
+                <h2>My Tasks</h2>
+                <h3 class="form-title">Add Task</h3>
+                <p class="subtitle">Fill in task details here</p>
+
+                <form class="task-form">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Due Date</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Priority</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Additional Notes</label>
+                        <textarea rows="4"></textarea>
+                    </div>
+                    <button type="button" class="btn-primary full-width">Save Task</button>
+                </form>
+            </div>
+
+            <div class="saved-section">
+                <h2>Saved Tasks</h2>
+                <div class="task-list">
+                    <div class="task-item">
+                        <div class="task-info">
+                            <h3>Write English Literature review</h3>
+                            <p>English literature</p>
+                        </div>
+                        <div class="task-badges">
+                            <span class="badge">HIGH</span>
+                            <span class="badge">x Days Left</span>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-info">
+                            <h3>Write English Literature review</h3>
+                            <p>English literature</p>
+                        </div>
+                        <div class="task-badges">
+                            <span class="badge">HIGH</span>
+                            <span class="badge">x Days Left</span>
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-info">
+                            <h3>Write English Literature review</h3>
+                            <p>English literature</p>
+                        </div>
+                        <div class="task-badges">
+                            <span class="badge">HIGH</span>
+                            <span class="badge">x Days Left</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
