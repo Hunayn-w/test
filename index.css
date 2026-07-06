@@ -146,3 +146,43 @@ h1 {
     color: #555;
     text-transform: uppercase;
 }
+
+/* =========================================
+   MOBILE RESPONSIVENESS (Phone Screens)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Navbar turns into a hamburger menu visually */
+    .navbar {
+        padding: 1.2rem 1.5rem;
+    }
+    .nav-links {
+        display: none; 
+    }
+    .navbar::after {
+        content: '☰';
+        font-size: 1.5rem;
+        color: #111;
+        cursor: pointer;
+    }
+
+    /* Header stacks the button under the text */
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Stats grid becomes a single column */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Task items stack their content */
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+}

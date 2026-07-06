@@ -171,3 +171,35 @@ h2 {
     color: #555;
     text-transform: uppercase;
 }
+
+/* =========================================
+   MOBILE RESPONSIVENESS (Phone Screens)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Navbar turns into a hamburger menu visually */
+    .navbar {
+        padding: 1.2rem 1.5rem;
+    }
+    .nav-links {
+        display: none; 
+    }
+    .navbar::after {
+        content: '☰';
+        font-size: 1.5rem;
+        color: #111;
+        cursor: pointer;
+    }
+
+    /* Split layout becomes a single column */
+    .split-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /* Task items stack their content */
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+}
